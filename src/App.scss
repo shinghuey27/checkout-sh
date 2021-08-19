@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@100;400;500;600;700&display=swap");
+html {
+  font-family: "Montserrat", sans-serif;
+  /* font-family: 'Lora', serif; */
+  border-radius: 12px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.normal {
+  position: absolute;
+  left: 0;
+  top: 17px;
+  font-size: 23px;
+  color: #828282;
+  margin-left: 0.8rem;
+  @media (max-width:900px){
+    top:8px
+  }
+}
+
+.expand {
+  position: absolute;
+  top: 17px;
+  right: 0;
+  font-size: 24px;
+
+  margin-right: 0.6rem;
+  background: #e0e0e0;
+  border-radius: 4px;
+  color: #828282;
+  @media (max-width:900px){
+    top:8px
+  }
+}
+
+.button{
+  font-size: 20px;
+  color: #828282;
+}

@@ -1,0 +1,414 @@
+$primary-color: #4e5150;
+$secondary-color: #333333;
+$gray2: #4f4f4f;
+$gray3: #828282;
+body {
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+
+main {
+
+
+  max-width: 960px;
+  margin: auto;
+}
+.section2 {
+  @media (max-width: 900px) {
+    margin: auto;
+  }
+}
+.checkoutTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  margin-top: 3.8rem;
+  margin-bottom: 3.1rem;
+  color: $primary-color;
+
+  @media (max-width: 900px) {
+    width: 350px;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+.checkoutContact {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $secondary-color;
+  margin-bottom: 1rem;
+}
+
+.checkoutShipping {
+  @extend .checkoutContact;
+  margin-top: 3.6rem;
+}
+.checkoutInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.postal {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  @media (max-width: 900px) {
+    margin-left: 1.5rem;
+  }
+}
+
+.checkoutInfoLabel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: $gray2;
+  margin-bottom: 0.5rem;
+  width: 100px;
+}
+.checkInputOverview {
+  position: relative;
+}
+.checkoutInfoInput {
+  padding-left: 3rem;
+  width: 465px;
+  height: 57px;
+  border: 1px solid $gray3;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-color;
+
+  &:focus {
+    outline: none;
+  }
+
+  @media (max-width: 900px) {
+    width: 349.25px;
+    height: 40.56px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+.postalInput {
+  @extend .checkoutInfoInput;
+  width: 217px;
+  @media (max-width: 900px) {
+    width: 162.98px;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+.noError {
+  display: none;
+}
+
+.error {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  color: red;
+}
+
+input::placeholder {
+  color: $gray3;
+}
+.button {
+  background-color: #f2994a;
+  border-radius: 12px;
+  margin-top: 1.4rem;
+  width: 166px;
+  height: 54px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  line-height: 20px;
+  font-size: 16px;
+}
+
+.datalist {
+  position: relative;
+  width: 217px;
+  @extend .checkoutInfoInput;
+  @media (max-width: 900px) {
+    width: 162.98px;
+  }
+}
+
+.datalist {
+  outline: none;
+  appearance: none;
+  width: 217px;
+  @media (max-width: 900px) {
+    width: 162.98px;
+  }
+}
+
+input::-webkit-calendar-picker-indicator {
+  margin-left: 0.5rem;
+  background: #e0e0e0;
+  border-radius: 4px;
+  color: #828282;
+}
+
+.countryPostal {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonDisplay {
+  width: 456px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6rem;
+  @media (max-width: 900px) {
+    width: 349.25px;
+  }
+}
+
+.checkbox {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 21px;
+  height: 21px;
+}
+
+.checkboxDesc {
+  margin-left: 0.6rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #4f4f4f;
+}
+
+.checkboxItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.calcContainer {
+  width: 383px;
+  height: 535px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  margin-left: 7rem;
+
+  @media (max-width: 900px) {
+    margin: auto;
+    width: 350px;
+    height: 489px;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.itemImg {
+  width: 134.21px;
+  height: 136.27px;
+  border-radius: 13px;
+  @media (max-width: 900px) {
+    width: 122.75px;
+    height: 124.64px;
+  }
+}
+
+.item {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.itemTop {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.itemBottom {
+  padding-bottom: 6rem;
+  @media (max-width: 900px) {
+    padding-bottom: 5rem;
+  }
+}
+.itemList {
+  margin-left: 1.2rem;
+}
+
+.itemName {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-color;
+  @media (max-width: 900px) {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+.itemPriceList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  width: 110px;
+  align-items: center;
+  @media (max-width: 900px) {
+    width: 95px;
+  }
+}
+
+.itemOriPrice {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: line-through;
+  color: $primary-color;
+  @media (max-width: 900px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
+
+.itemPromoPrice {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #f2994a;
+  @media (max-width: 900px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.itemAmtContainer {
+  border: 1px solid #828282;
+  box-sizing: border-box;
+  border-radius: 12px;
+  width: 134.25px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+
+  @media (max-width: 900px) {
+    width: 122.8px;
+    margin-top: 1.5rem;
+    height: 49.86px;
+  }
+}
+
+.itemAmtButton {
+  background: #e0e0e0;
+  border-radius: 4px;
+  width: 21.2px;
+  height: 21.2px;
+  text-align: center;
+  color: #828282;
+  cursor: pointer;
+  @media (max-width: 900px) {
+    width: 19.39px;
+    height: 19.39px;
+  }
+}
+
+.itemAmt {
+  outline: none;
+  width: 30px;
+  text-align: center;
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #333333;
+}
+
+.line {
+  border: 1px solid #bdbdbd;
+  width: 327.06px;
+  @media (max-width: 900px) {
+    width: 299.15px;
+  }
+}
+
+.shippingTotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 327.06px;
+  margin: auto;
+  @media (max-width: 900px) {
+    width: 299.15px;
+  }
+}
+
+.shippingTitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: $secondary-color;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.shippingPrice {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: $secondary-color;
+}
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 17px;
+}
+
+.username {
+  font-weight: 700;
+  text-decoration: underline;
+}
